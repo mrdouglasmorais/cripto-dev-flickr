@@ -30,6 +30,13 @@ function createFlickrThumb(photoData){
   return link
 }
 
+function clearLoader(){
+  let loadText = document.querySelector('#load-text')
+  loadText.remove()
+}
+
+
+
 searchForm.addEventListener('submit', function(e){
   e.preventDefault();
   let filter =  searchTerm.value;
@@ -48,11 +55,6 @@ searchForm.addEventListener('submit', function(e){
         })
         results.appendChild(item)
       })
-    })
-    function clearLoader(){
-      let loadText = document.querySelector('#load-text')
-      loadText.remove()
-    }
-
-    clearLoader();
+    }).finally( () => clearLoader());
+    
 })
