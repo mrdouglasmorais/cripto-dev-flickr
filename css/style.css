@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,200;1,300&family=Roboto:wght@300;400;500;900&display=swap');
+
+html, body{
+  box-sizing: border-box;
+  background-image: url('https://i.pinimg.com/originals/0a/4d/cb/0a4dcb92fa2d3c601b58d72720d6bec4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
